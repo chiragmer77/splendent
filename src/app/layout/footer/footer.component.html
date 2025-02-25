@@ -1,0 +1,63 @@
+<!-- footer.component.html -->
+<section
+  class="bg-white shadow-md py-6"
+  style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+>
+  <div class="container mx-auto px-4 sm:px-35">
+    <!-- Main Footer Row -->
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <!-- Logo Section -->
+      <div class="mb-4 md:mb-0">
+        <a routerLink="/" class="inline-block">
+          <span class="text-2xl font-bold text-black">
+            Splendent<span class="text-blue-500">AI</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav
+        class="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6 text-gray-700"
+      >
+        <a
+          routerLink="/case-studies"
+          class="hover:text-blue-500 transition duration-200"
+          >Case Studies</a
+        >
+        <a
+          routerLink="/blogs"
+          class="hover:text-blue-500 transition duration-200"
+          >Blogs</a
+        >
+        <a
+          routerLink="/about-us"
+          class="hover:text-blue-500 transition duration-200"
+          >About Us</a
+        >
+        <a
+          routerLink="/contact-us"
+          class="hover:text-blue-500 transition duration-200"
+          >Contact Us</a
+        >
+      </nav>
+    </div>
+
+    <!-- Privacy & Terms Section -->
+    <div class="flex justify-center mt-4 space-x-6 text-gray-500 text-sm">
+      <a
+        routerLink="/privacy-policy"
+        class="hover:text-blue-500 transition duration-200"
+        >Privacy Policy</a
+      >
+      <a
+        routerLink="/terms-conditions"
+        class="hover:text-blue-500 transition duration-200"
+        >Terms & Conditions</a
+      >
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-white p-6 text-center">
+  <p>© {{ currentYear }} SplendentAI. All rights reserved.</p>
+</footer>

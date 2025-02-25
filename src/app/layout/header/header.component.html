@@ -1,0 +1,95 @@
+<header class="w-full bg-white shadow-md sticky top-0 z-50">
+  <div
+    class="container mx-auto px-8 sm:px-35 py-3 flex justify-between items-center"
+  >
+    <!-- Logo -->
+    <a routerLink="/" class="flex items-center space-x-2">
+      <span class="text-xl sm:text-2xl font-bold text-black">
+        Splendent<span class="text-blue-500">AI</span>
+      </span>
+    </a>
+    <!-- Mobile Menu Button -->
+    <button (click)="toggleMobileMenu()" class="lg:hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 text-gray-700"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7"
+        />
+      </svg>
+    </button>
+    <!-- Desktop Navigation -->
+    <nav class="hidden lg:flex items-center space-x-4 lg:space-x-6">
+      <a
+        routerLink="/about"
+        class="text-gray-700 hover:text-blue-500 font-medium"
+        >About Us</a
+      >
+      <a
+        routerLink="/case-studies"
+        class="text-gray-700 hover:text-blue-500 font-medium"
+        >Case Studies</a
+      >
+      <a
+        routerLink="/blogs"
+        class="text-gray-700 hover:text-blue-500 font-medium"
+        >Blogs</a
+      >
+      <a
+        routerLink="/blogs"
+        class="text-gray-700 hover:text-blue-500 font-medium"
+        >Services</a
+      >
+    </nav>
+    <!-- Desktop CTA -->
+    <a
+      routerLink="/contact"
+      class="hidden lg:block bg-blue-500 text-white px-5 py-2 rounded-full shadow hover:bg-blue-600 font-medium"
+    >
+      Let's Talk
+    </a>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    class="lg:hidden bg-white border-t border-gray-100 overflow-hidden transition-all duration-300"
+    [class.max-h-0]="!mobileMenuOpen"
+    [class.max-h-96]="mobileMenuOpen"
+  >
+    <div class="px-8 py-3 space-y-3">
+      <a
+        routerLink="/about"
+        class="block text-gray-700 hover:text-blue-500 font-medium"
+        >About Us</a
+      >
+      <a
+        routerLink="/about"
+        class="block text-gray-700 hover:text-blue-500 font-medium"
+        >Services</a
+      >
+      <a
+        routerLink="/case-studies"
+        class="block text-gray-700 hover:text-blue-500 font-medium"
+        >Case Studies</a
+      >
+      <a
+        routerLink="/blogs"
+        class="block text-gray-700 hover:text-blue-500 font-medium"
+        >Blogs</a
+      >
+      <a
+        routerLink="/contact"
+        class="block w-full bg-blue-500 text-white px-4 py-2 rounded-full text-center shadow hover:bg-blue-600 font-medium"
+      >
+        Let's Talk
+      </a>
+    </div>
+  </div>
+</header>
