@@ -1,6 +1,6 @@
-<header class="w-full bg-white shadow-md sticky top-0 z-50">
+<header class="w-full bg-white  top-0 z-50">
   <div
-    class="container mx-auto px-8 sm:px-35 py-3 flex justify-between items-center"
+    class="container mx-auto px-8 sm:px-35 py-8 flex justify-between items-center"
   >
     <!-- Logo -->
     <a routerLink="/" class="flex items-center space-x-2">
@@ -26,35 +26,42 @@
       </svg>
     </button>
     <!-- Desktop Navigation -->
-    <nav class="hidden lg:flex items-center space-x-4 lg:space-x-6">
+    <nav class="hidden lg:flex items-center space-x-4 lg:space-x-6 ml-auto">
       <a
         routerLink="/about"
-        class="text-gray-700 hover:text-blue-500 font-medium"
+        class="text-gray-700 hover:text-blue-500 text-[20px]  font-medium  "
         >About Us</a
+      >
+            <a
+        routerLink="/blogs"
+        class="text-gray-700 hover:text-blue-500 text-[20px] font-medium "
+        >Services</a
       >
       <a
         routerLink="/case-studies"
-        class="text-gray-700 hover:text-blue-500 font-medium"
+        class="text-gray-700 hover:text-blue-500 text-[20px] font-medium "
         >Case Studies</a
       >
+            <a
+        routerLink="/blogs"
+        class="text-gray-700 hover:text-blue-500 text-[20px] font-medium "
+        >Solutions</a
+      >
       <a
         routerLink="/blogs"
-        class="text-gray-700 hover:text-blue-500 font-medium"
+        class="text-gray-700 hover:text-blue-500 text-[20px] font-medium "
         >Blogs</a
       >
-      <a
-        routerLink="/blogs"
-        class="text-gray-700 hover:text-blue-500 font-medium"
-        >Services</a
-      >
-    </nav>
-    <!-- Desktop CTA -->
-    <a
+
+          <a
       routerLink="/contact"
-      class="hidden lg:block bg-blue-500 text-white px-5 py-2 rounded-full shadow hover:bg-blue-600 font-medium"
+      class="hidden lg:block bg-blue-500 text-white px-5 py-2 rounded-full shadow hover:bg-blue-600 text-[20px]"
     >
       Let's Talk
     </a>
+    </nav>
+    <!-- Desktop CTA -->
+
   </div>
 
   <!-- Mobile Menu -->
